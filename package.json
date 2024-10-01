@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
-    "build": "parcel build src/index.html --public-url / --dist-dir dist"
+    "build": "parcel build src/index.html --public-url ./ --dist-dir dist"
   },
   "keywords": [],
   "author": "",
