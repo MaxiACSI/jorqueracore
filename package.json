@@ -2,13 +2,13 @@
   "name": "jorqueracore",
   "version": "1.0.0",
   "description": "",
-  "source": "index.html",
+  "source": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
-    "build": "parcel build"
+    "build": "parcel build src/index.html --public-url / --dist-dir dist"
   },
   "keywords": [],
   "author": "",
