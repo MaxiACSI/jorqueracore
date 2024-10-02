@@ -2,5 +2,13 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-    background-color: rgba($color: #5FC6E5, $alpha: 0.2);
+    background-color: #e6f3ff;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
