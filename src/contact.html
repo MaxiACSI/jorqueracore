@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernardo Jorquera - Candidato a CORE 2024</title>
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script type="module" src="js/main.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .bg-light-blue {
+            background-color: var(--secondary-color);
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 15px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+        .contact-info:hover {
+            transform: translateY(-5px);
+        }
+        .btn-whatsapp {
+            background-color: var(--whatsapp-color);
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="about-me.html">Sobre mí</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="contacto" class="container my-5 py-5">
+            <div class="row justify-content-center">
+                <h2 class="text-center section-title mb-5">Contacto</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center mb-5">¿Tienes alguna pregunta o sugerencia? No dudes en contactarme. Estoy aquí para escucharte y trabajar juntos por nuestra región.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100 shadow-sm contact-info">
+                        <div class="card-body text-center">
+                            <i data-lucide="mail" class="contact-icon mb-3"></i>
+                            <h5 class="card-title">Correo Electrónico</h5>
+                            <p class="card-text">bernardo.jorquera@ejemplo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm contact-info">
+                        <div class="card-body text-center">
+                            <i data-lucide="phone" class="contact-icon mb-3"></i>
+                            <h5 class="card-title">Teléfono</h5>
+                            <p class="card-text">+56 9 9416 6766</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-4">Envíame un mensaje por WhatsApp</h5>
+                            <form id="whatsappForm">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-whatsapp w-100">
+                                    <i data-lucide="send" class="me-2"></i>Enviar por WhatsApp
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5>Bernardo Jorquera</h5>
+                        <p>Candidato a Consejero Regional 2024</p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5>Enlaces rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Incio</a></li>
+                            <li><a href="about-me.html">Sobre mí</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Sígueme en redes sociales</h5>
+                        <div>
+                            <a href="https://www.facebook.com/bernardo.j.leyton" class="social-icon"><i data-lucide="facebook"></i></a>
+                            <a href="https://www.instagram.com/bernardojorquera.core" class="social-icon"><i data-lucide="instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-4 mb-3">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>&copy; 2024 Bernardo Jorquera. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
