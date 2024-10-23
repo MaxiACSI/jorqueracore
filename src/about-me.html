@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bernardo Jorquera - Candidato a CORE 2024</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/styles.scss">
+    <script type="module" src="js/main.js"></script>
     <style>
         .bg-light-blue {
             background-color: #e6f3ff;
@@ -27,8 +28,8 @@
 </head>
 <body>
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,37 +37,45 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                        <a class="nav-link" href="#participa">¡Sé parte de este proyecto!</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" href="about-me.html">Sobre mí</a>
+                        <a class="nav-link" href="#">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <section id="sobre-mi" class="container my-5 py-5">
+        <section id="sobre-mi" class="container my-3 py-5">
             <h2 class="text-center mb-5">Sobre Mí</h2>
-            <div class="row align-items-center mb-5">
-                <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="img/profile-picture.jpg" alt="Bernardo Jorquera" class="profile-image">
+            
+            <div class="row bg-body-secondary p-4 rounded-4">
+                <div class="col-12 col-md-8">
+                    <h1 class="text-center">Bernardo Jorquera candidato a CORE 2024</h1>
+                    <p class="text-center text-md-start">Hola, soy Bernardo Jorquera Leyton, soy un joven floridano de 27
+                        años, hijo de madre y padre profesores,
+                        que me enseñaron que la solidaridad y la construcción comunitaria de la vida es fundamental para un
+                        mundo mejor.
+                        Llevo cinco años realizando trabajo comunitario, partiendo en asambleas territoriales y ollas
+                        comunes
+                        durante la pandemia, y luego formando parte del equipo de la concejala Verónica Miranda, intentando
+                        aportar a la organización y el empoderamiento vecinal en conjunto de clubes deportivos infantiles,
+                        comités de seguridad barrial, juntas de vecinos, centros culturales y organizaciones comunitarias en
+                        general.</p>
                 </div>
-                <div class="col-md-8">
-                    <h3>Bernardo Jorquera Leyton</h3>
-                    <p class="lead">Candidato a Consejero Regional 2024</p>
-                    <p>Soy un joven floridano de 27 años, hijo de madre y padre profesores, que me enseñaron que la solidaridad y la construcción comunitaria de la vida es fundamental para un mundo mejor.</p>
+                <div class="col-12 col-md-4 text-center align-content-center">
+                    <img class="img-thumbnail" src="./img/profile-picture.jpg" alt="Imagen Bernardo Jorquera">
                 </div>
             </div>
-            
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-md-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h4 class="card-title"><i data-lucide="book-open" class="me-2"></i>Currículum Académico</h4>
                             <ul class="list-unstyled">
-                                <li class="mb-2"><strong>2015-2020:</strong> Licenciatura en Ciencias Políticas, Universidad de Chile</li>
-                                <li class="mb-2"><strong>2021:</strong> Diplomado en Gestión Pública y Desarrollo Regional, Universidad Católica</li>
-                                <li class="mb-2"><strong>2022:</strong> Curso de Liderazgo y Participación Ciudadana, Academia de Capacitación Municipal y Regional</li>
+                                <li class="mb-2"><strong>2017-2021:</strong> Licenciado en Antropología, Universidad de Chile</li>
+                                <li class="mb-2"><strong>2021-2022:</strong> Asesor constituyente Alondra Carrillo, Convención Constitucional</li>
+                                <li class="mb-2"><strong>2021-2024:</strong> Asesor concejala Verónica Miranda, Concejo Municipal de La Florida</li>
+                                <li class="mb-2"><strong>2024:</strong> Antropólogo Social, Universidad de Chile</li>
                             </ul>
                         </div>
                     </div>

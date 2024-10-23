@@ -12,3 +12,15 @@ body {
 .card:hover {
     transform: translateY(-5px);
 }
+
+.accordion-button:not(.collapsed) {
+    background-color: revert;
+}
+
+.navbar {
+    background-color: #1c84c2;
+}
+
+#carouselExampleFade img {
+    height: auto;
+}
