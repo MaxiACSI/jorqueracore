@@ -21,6 +21,7 @@ body {
     background-color: #1c84c2;
 }
 
-#carouselExampleFade img {
-    height: auto;
+.carousel-item img {
+    max-height: 30rem;
+    object-fit: contain;
 }
