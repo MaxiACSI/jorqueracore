@@ -13242,4 +13242,8 @@ body {
   margin-right: 1rem;
   font-size: 1.5rem;
 }
+
+.accordion-button:not(.collapsed) {
+  color: revert;
+}
 /*# sourceMappingURL=index.044e704e.css.map */
