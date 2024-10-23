@@ -13188,8 +13188,16 @@ textarea.form-control-lg {
   }
 }
 
+:root {
+  --primary-color: #0056b3;
+  --secondary-color: #f8f9fa;
+  --accent-color: #ffc107;
+  --whatsapp-color: #25d366;
+}
+
 body {
   background-color: #e6f3ff;
+  font-family: Roboto, sans-serif;
 }
 
 .card {
@@ -13198,5 +13206,40 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: revert;
+}
+
+.navbar {
+  background-color: #1c84c2;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  max-height: 30rem;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: auto;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=index.044e704e.css.map */

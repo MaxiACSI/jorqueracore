@@ -591,6 +591,15 @@ var _lucide = require("lucide");
 (0, _lucide.createIcons)({
     icons: (0, _lucide.icons)
 });
+document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById("nombre").value;
+    const mensaje = document.getElementById("mensaje").value;
+    const telefono = "+56994166766"; // Reemplaza esto con tu número de WhatsApp
+    const textoCompleto = `Hola, soy ${nombre}. ${mensaje}`;
+    const encodedText = encodeURIComponent(textoCompleto);
+    window.open(`https://api.whatsapp.com/send?phone=${telefono}&text=${encodedText}`, "_blank");
+});
 
 },{"bootstrap":"h36JB","lucide":"iIzyy"}],"h36JB":[function(require,module,exports) {
 /*!
