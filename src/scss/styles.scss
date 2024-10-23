@@ -51,3 +51,7 @@ body {
     margin-right: 1rem;
     color: white;
 }
+
+.accordion-button:not(.collapsed) {
+    color: revert;
+}
